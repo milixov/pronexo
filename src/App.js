@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Menu, Icon } from "antd";
 import { Row, Col } from "antd";
-import { Avatar, Button, Input } from "antd";
+import { Avatar, Badge, Input } from "antd";
 
 import "./App.css";
 
@@ -29,24 +29,29 @@ class App extends Component {
                   src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                 />
                 <span className="Icon">|</span>
-                <Button
-                  style={{ border: "none" }}
-                  shape="circle"
-                  icon="coffee"
+                <Avatar
                   className="Icon"
-                />
-                <Button
-                  style={{ border: "none" }}
-                  shape="circle"
-                  icon="setting"
+                  size="small"
+                  style={{ backgroundColor: "white" }}
+                >
+                  <Icon type="like" style={{ color: "black" }} />
+                </Avatar>
+                <Avatar
                   className="Icon"
-                />
-                <Button
-                  style={{ border: "none" }}
-                  shape="circle"
-                  icon="like"
-                  className="Icon"
-                />
+                  size="small"
+                  style={{ backgroundColor: "white" }}
+                >
+                  <Icon type="coffee" style={{ color: "black" }} />
+                </Avatar>
+                <Badge dot>
+                  <Avatar
+                    className="Icon"
+                    size="small"
+                    style={{ backgroundColor: "white" }}
+                  >
+                    <Icon type="setting" style={{ color: "black" }} />
+                  </Avatar>
+                </Badge>
               </Col>
             </Row>
           </Header>
