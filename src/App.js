@@ -5,6 +5,8 @@ import "./App.css";
 import DrawerMenu from "./components/menu";
 import LayoutHeader from "./components/header";
 
+import AppContent from "./container/content";
+
 const { Header, Content, Footer, Sider } = Layout;
 
 class App extends Component {
@@ -15,10 +17,8 @@ class App extends Component {
           <Header style={{ background: "#fff", padding: 0 }}>
             <LayoutHeader />
           </Header>
-          <Content style={{ margin: "24px 16px 0" }}>
-            <div style={{ padding: 24, background: "#fff", minHeight: 360 }}>
-              content
-            </div>
+          <Content style={{ margin: "16px 0 0" }}>
+            <AppContent />
           </Content>
           <Footer style={{ textAlign: "center" }} />
         </Layout>

@@ -38,6 +38,31 @@
   width: calc(100% + 0px) !important;
 }
 
+.ant-tabs-bar {
+  margin: 0 12px 0 0 !important;
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+  background-color: #e4e4f1 !important;
+}
+
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+  border-radius: 0 !important;
+  margin: 0 4px 0 4px !important;
+}
+
+.ant-advanced-search-form .ant-form-item {
+  display: flex;
+}
+
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+  flex: 1;
+}
+
+.ant-advanced-search-form {
+  padding: 24px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
