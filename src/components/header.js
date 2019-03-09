@@ -9,14 +9,7 @@ class LayoutHeader extends Component {
   render() {
     return (
       <Row style={{ marginLeft: "16px", marginRight: "16px" }}>
-        <Col span={12} push={12} dir="rtl">
-          <Search
-            placeholder="جستجو"
-            onSearch={value => console.log(value)}
-            style={{ width: 200, border: "none" }}
-          />
-        </Col>
-        <Col span={12} pull={12}>
+        <Col span={12}>
           <span>امیر رفیع زاده</span>
           <Avatar
             className="Icon"
@@ -46,6 +39,13 @@ class LayoutHeader extends Component {
               <Icon type="setting" style={{ color: "black" }} />
             </Avatar>
           </Badge>
+        </Col>
+        <Col span={12} dir="rtl">
+          <Search
+            placeholder="جستجو"
+            onSearch={value => console.log(value)}
+            style={{ width: 200, border: "none" }}
+          />
         </Col>
       </Row>
     );
