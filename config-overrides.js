@@ -32,7 +32,11 @@ module.exports = override(
       "@tabs-card-active-color": text,
       "@tabs-highlight-color": cardBackground,
       "@tabs-active-color": cardBackground,
-      "@tabs-card-head-background": primary
+      "@tabs-card-head-background": primary,
+      "@form-item-trailing-colon": false,
+      "@form-item-margin-bottom": "0px",
+      "@form-vertical-label-padding": "0 0",
+      "@form-vertical-label-margin": "0"
     }
   })
 );
